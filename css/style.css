@@ -229,17 +229,6 @@ footer {
 }
 
 /* HERO SLIDER */
-.hero-slider {
-    position: relative;
-    height: 90vh;
-    background: #333;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 80px 60px;
-    overflow: hidden;
-}
-
 .slide {
     position: absolute;
     top: 0;
