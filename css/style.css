@@ -247,13 +247,28 @@ footer {
 /* HERO SLIDER */
 .slide {
     position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-left: 60px;
 
     opacity: 0;
     transition: opacity 1s ease-in-out;
 
     z-index: 0;
+
+    filter: contrast(1.05) brightness(0.95);
 }
 
 .slide.active {
@@ -262,19 +277,17 @@ footer {
 }
 
 /* ANIMASI MASUK TEKS */
-.slide h1,
-.slide p,
+.slide h1 {
+    text-shadow: 0 6px 25px rgba(0,0,0,0.9);
+}
+
+.slide p {
+    text-shadow: 0 4px 15px rgba(0,0,0,0.85);
+}
 .slide a {
     transform: translateY(20px);
     opacity: 0;
     transition: all 0.8s ease;
-}
-
-.slide.active h1,
-.slide.active p,
-.slide.active a {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .slide::before {
@@ -296,11 +309,13 @@ footer {
 }
 
 .slide h1 {
-    text-shadow: 0 4px 20px rgba(0,0,0,0.9);
+    color: #ffffff;
+    text-shadow: 0 6px 25px rgba(0,0,0,0.95);
 }
 
 .slide p {
-    text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+    color: #f8fafc;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.9);
 }
 
 .slide h1,
@@ -312,7 +327,6 @@ footer {
 
 .slide.active {
     opacity: 1;
-    visibility: visible;
 }
 
 .hero-slider h1 {
