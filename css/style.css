@@ -126,13 +126,12 @@ body {
     padding: 10px 22px;
     border-radius: 50px;
 
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, #dc2626, #ef4444);
     color: white;
-    text-decoration: none;
-    font-weight: 500;
 
-    box-shadow: 0 10px 25px rgba(185, 28, 28, 0.3);
-    transition: 0.3s;
+    font-weight: 600;
+
+    box-shadow: 0 8px 25px rgba(220,38,38,0.5);
 }
 
 .btn:hover {
@@ -279,13 +278,27 @@ footer {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.75) 0%,   /* kiri (teks) gelap */
+        rgba(0,0,0,0.4) 40%,
+        rgba(0,0,0,0.1) 100%  /* kanan terang */
+    );
+
     top: 0;
     left: 0;
 }
 
-.slide h1,
-.slide p,
+.slide h1 {
+    color: #ffffff;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.slide p {
+    color: #f1f5f9;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+}
 .slide a {
     margin-top: 20px;
     align-self: flex-start;   
@@ -300,10 +313,6 @@ footer {
     font-size: 42px;
 }
 
-.hero-slider p {
-    margin-top: 10px;
-    color: #ddd;
-}
 
 /* DOT INDICATOR */
 .dots {
