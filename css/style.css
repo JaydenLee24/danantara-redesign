@@ -264,16 +264,11 @@ footer {
     padding-left: 60px;
 
     opacity: 0;
-    transition: opacity 1s ease-in-out;
-
-    z-index: 0;
-
-    filter: contrast(1.05) brightness(0.95);
+    transition: opacity 0.8s ease;
 }
 
 .slide.active {
     opacity: 1;
-    z-index: 1;
 }
 
 /* ANIMASI MASUK TEKS */
@@ -298,8 +293,8 @@ footer {
 
     background: linear-gradient(
         to right,
-        rgba(0,0,0,0.6) 0%,
-        rgba(0,0,0,0.3) 40%,
+        rgba(0,0,0,0.55) 0%,
+        rgba(0,0,0,0.25) 40%,
         rgba(0,0,0,0) 80%
     );
 
