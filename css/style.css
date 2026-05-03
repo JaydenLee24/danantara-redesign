@@ -282,6 +282,7 @@ footer {
 
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .slide h1 {
@@ -293,9 +294,12 @@ footer {
     color: #f1f5f9;
     text-shadow: 0 3px 10px rgba(0,0,0,0.6);
 }
+
+.slide h1,
+.slide p,
 .slide a {
-    margin-top: 20px;
-    align-self: flex-start;   
+    position: relative;
+    z-index: 2;
 }
 
 .slide.active {
