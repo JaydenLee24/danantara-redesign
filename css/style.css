@@ -323,6 +323,10 @@ footer {
 .slide.active {
     opacity: 1;
 }
+.slide.active a {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 .hero-slider h1 {
     font-size: 42px;
