@@ -91,12 +91,6 @@ body {
     font-weight: 700;
 }
 
-.hero-slider p {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #e2e8f0;
-}
-
 .overlay {
     position: absolute;
     width: 100%;
@@ -335,3 +329,7 @@ footer {
     background: white;
 }
 
+.slide h1,
+.slide p {
+    color: #ffffff !important;
+}
