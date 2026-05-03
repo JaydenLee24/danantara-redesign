@@ -358,3 +358,12 @@ footer {
 .slide p {
     color: #ffffff !important;
 }
+
+.slide.active a.btn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.slide.active a.btn {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
