@@ -13,11 +13,14 @@ function showSlide(index) {
     current = index;
 }
 
-// AUTO SLIDE
-setInterval(() => {
+// AUTO LOOP
+function autoSlide() {
     current = (current + 1) % slides.length;
     showSlide(current);
-}, 6000); 
+
+    setTimeout(autoSlide, 6000);
+}
 
 // INIT
 showSlide(0);
+setTimeout(autoSlide, 6000);
