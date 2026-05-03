@@ -1,3 +1,15 @@
+:root {
+    --primary: #0b3c5d;
+    --secondary: #1d6fa5;
+    --accent: #2ea3f2;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --text: #1e293b;
+
+    --radius: 12px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
 * {
     margin: 0;
     padding: 0;
