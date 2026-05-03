@@ -137,11 +137,6 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.15);
 }
 
-.primary {
-    background: #007bff;
-    color: white;
-}
-
 .outline {
     border: 1px solid white;
     color: white;
