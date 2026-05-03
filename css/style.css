@@ -280,8 +280,8 @@ footer {
     text-shadow: 0 4px 15px rgba(0,0,0,0.85);
 }
 .slide a {
-    transform: translateY(20px);
-    opacity: 0;
+    transform: translateY(0);
+    opacity: 1;
     transition: all 0.8s ease;
 }
 
@@ -359,10 +359,6 @@ footer {
     color: #ffffff !important;
 }
 
-.slide.active a.btn {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-}
 .slide.active a.btn {
     opacity: 1 !important;
     transform: translateY(0) !important;
