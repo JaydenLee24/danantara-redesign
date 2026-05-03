@@ -261,6 +261,22 @@ footer {
     z-index: 1;
 }
 
+/* ANIMASI MASUK TEKS */
+.slide h1,
+.slide p,
+.slide a {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.slide.active h1,
+.slide.active p,
+.slide.active a {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .slide::before {
     content: "";
     position: absolute;
