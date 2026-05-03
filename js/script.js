@@ -15,9 +15,9 @@ function showSlide(index) {
 
 // AUTO SLIDE
 setInterval(() => {
-    let next = (current + 1) % slides.length;
-    showSlide(next);
-}, 4000);
+    current = (current + 1) % slides.length;
+    showSlide(current);
+}, 6000); 
 
 // INIT
 showSlide(0);
