@@ -1,7 +1,8 @@
 :root {
-    --primary: #0b3c5d;
-    --secondary: #1d6fa5;
-    --accent: #2ea3f2;
+    --primary: #8B0000;      
+    --secondary: #b22222;   
+    --accent: #0b3c5d;     
+
     --dark: #0f172a;
     --light: #f8fafc;
     --text: #1e293b;
@@ -119,14 +120,20 @@ body {
 
 /* BUTTON */
 .btn {
-    display: inline-block;
-    padding: 12px 28px;
+    display: inline-flex;     
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 22px; 
     border-radius: 50px;
 
-    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
     text-decoration: none;
     font-weight: 500;
+
+    width: auto;                
+    max-width: max-content;      
 
     box-shadow: var(--shadow);
     transition: 0.3s;
@@ -134,9 +141,8 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 25px rgba(139, 0, 0, 0.3);
 }
-
 .outline {
     border: 1px solid white;
     color: white;
@@ -263,8 +269,8 @@ footer {
 .slide h1,
 .slide p,
 .slide a {
-    position: relative;
-    z-index: 2;
+    margin-top: 20px;
+    align-self: flex-start;   
 }
 
 .slide.active {
